@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: MyGreetingApp
+
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5432/greetings_db
+    username: ***REMOVED***
+    password: ***REMOVED***
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
