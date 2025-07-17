@@ -1,0 +1,86 @@
+# ==========================================
+# 🌐 FRONTEND: Next.js / Yarn / Vercel
+# ==========================================
+
+/front/my-next-app/node_modules
+/front/my-next-app/.pnp
+/front/my-next-app/.pnp.*
+/front/my-next-app/.yarn/*
+!/front/my-next-app/.yarn/patches
+!/front/my-next-app/.yarn/plugins
+!/front/my-next-app/.yarn/releases
+!/front/my-next-app/.yarn/versions
+
+/front/my-next-app/coverage
+/front/my-next-app/.next/
+/front/my-next-app/out/
+/front/my-next-app/build
+/front/my-next-app/.vercel
+
+/front/my-next-app/npm-debug.log*
+/front/my-next-app/yarn-debug.log*
+/front/my-next-app/yarn-error.log*
+/front/my-next-app/.pnpm-debug.log*
+
+/front/my-next-app/.env*
+/front/my-next-app/next-env.d.ts
+/front/my-next-app/*.tsbuildinfo
+/front/my-next-app/.DS_Store
+/front/my-next-app/*.pem
+
+# ==========================================
+# ☕ BACKEND: Spring Boot / Gradle / IDE
+# ==========================================
+
+/backend/SpringHello/.gradle
+/backend/SpringHello/build/
+/backend/SpringHello/bin/
+/backend/SpringHello/out/
+/backend/SpringHello/HELP.md
+
+# Gradle Wrapper JAR 제외 (보통 저장소에 포함)
+/backend/SpringHello/gradle/wrapper/gradle-wrapper.jar
+
+# Include build/bin/out inside src only
+!/backend/SpringHello/**/src/main/**/build/
+!/backend/SpringHello/**/src/test/**/build/
+!/backend/SpringHello/**/src/main/**/bin/
+!/backend/SpringHello/**/src/test/**/bin/
+!/backend/SpringHello/**/src/main/**/out/
+!/backend/SpringHello/**/src/test/**/out/
+
+# === STS ===
+/backend/SpringHello/.apt_generated
+/backend/SpringHello/.classpath
+/backend/SpringHello/.factorypath
+/backend/SpringHello/.project
+/backend/SpringHello/.settings
+/backend/SpringHello/.springBeans
+/backend/SpringHello/.sts4-cache
+
+# === IntelliJ IDEA ===
+/backend/SpringHello/.idea
+/backend/SpringHello/*.iws
+/backend/SpringHello/*.iml
+/backend/SpringHello/*.ipr
+
+# === NetBeans ===
+/backend/SpringHello/nbproject/private/
+/backend/SpringHello/nbbuild/
+/backend/SpringHello/dist/
+/backend/SpringHello/nbdist/
+/backend/SpringHello/.nb-gradle/
+
+# === VS Code ===
+/backend/SpringHello/.vscode/
+
+# ==========================================
+# 🧼 GLOBAL (both)
+# ==========================================
+*.log
+*.pem
+.env
+.DS_Store
+.idea/
+.vscode/
+*.iml
