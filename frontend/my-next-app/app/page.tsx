@@ -37,7 +37,7 @@ export default function Home() {
         onChange={handleChange}
       >
         <option value="en">영어</option>
-        <option value="ko">한국어</option>
+        <option value="kr">한국어</option>
         <option value="jp">일본어</option>
       </select>
       <div className="text-xl m-2">{greeting}</div>

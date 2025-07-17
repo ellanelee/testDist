@@ -14,12 +14,12 @@ public class GreetingController {
 
     private final GreetingService greetingService;
 
-    @GetMapping("/")
+    @GetMapping("/api")
     public String HelloWorld(){
         return "Hello World!";
     }
 
-    @GetMapping("/greeting")
+    @GetMapping("/api/greeting")
     public ResponseEntity<String> greeting(@RequestParam String lang) {
         String message = greetingService.sayHelloWithLang(lang);
         return ResponseEntity.ok(message);
