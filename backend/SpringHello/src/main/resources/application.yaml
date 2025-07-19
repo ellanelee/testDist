@@ -4,8 +4,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://127.0.0.1:5432/greetings_db
-    username: ***REMOVED***
-    password: ***REMOVED***
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
